@@ -47,12 +47,12 @@
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[rectangle,noedge]{kyle.png}
+% \photo[rectangle,noedge]{kyle.png}
 \name{Kyle W.}{Rader}
 \position{Software Engineer{\enskip\cdotp\enskip} Maker of Things}
-\address{18612 NE 57th Redmond, WA 98052}
+% \address{}
 
-\phone{425-241-7977}
+\mobile{425-241-7977}
 \email{kyle@kylerader.ninja}
 \homepage{kylerader.ninja}
 \github{/kyle-rader}
@@ -65,7 +65,7 @@
 % \reddit{reddit-id}
 % \extrainfo{extra informations}
 
-\quote{``Motivation is like bathing. Recommended daily."}
+% \quote{``This is fine."}
 
 \begin{document}
 
@@ -77,15 +77,16 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Curriculum Vitae}
+  {Kyle W. Rader}
   {\thepage}
 
-
+%-------------------------------------------------------------------------------
+% Education
+%-------------------------------------------------------------------------------
 \cvsection{Education}
 \begin{cventries}
-
   \cventry
-    {B.S. Computer Science $\cdot$ 3.5 $\cdot$ 2014} % Degree
+    {B.S. Computer Science $\cdot$ 2014} % Degree
     {Western Washington University} % Institution
     {Bellingham, WA} % Location
     {Sept. 2010 - June. 2014} % Date(s)
@@ -95,211 +96,178 @@
         \item {2013 Technology Leader of Tomorrow award from Technology Alliance Group NW (TAGNW)}
       \end{cvitems}
     }
+    {}
 
   \cventry
-    {M.S. Computer Science $\cdot$ 3.9 $\cdot$ exp 2018} % Degree
+    {M.S. Computer Science $\cdot$ exp 2018} % Degree
     { } % Institution
     { } % Location
     {Sept. 2014 - Expt. Spring. 2018} % Date(s)
     {
       \begin{cvitems} % Description(s) bullet points
         \item {Finishing research, part time, on social media post recommendation system for content curators. In conjuction with ActionSprout Inc.}
-        \item {Implmented application features at ActionSprout to collect a dataset of Facebook page, post, and voting observations.}
+        \item {Implmented application features at ActionSprout to collect a dataset of Facebook page to post voting observations.}
       \end{cvitems}
     }
+    {}
 
 \end{cventries}
 
-
+%-------------------------------------------------------------------------------
+% Skills
+%-------------------------------------------------------------------------------
 \cvsection{Skills}
 \begin{cvskills}
-
   \cvskill
-    {Programming} % Category
-    {Ruby, Node.JS, C/C++, Scala, JAVA, OCaml, LaTeX} % Skills
+    {Current Languages} % Category
+    {Ruby, NodeJS, Bash, Python, Cypher (graph query language)} % Skills
 
   \cvskill
     {Web} % Category
-    {Django, Express, Redux, React, HTML5, LESS, SASS} % Skills
+    {Rails, Meteor, Express, React, Ember, HTML, LESS/SASS} % Skills
 
   \cvskill
-    {Languages} % Category
-    {Korean, English, Japanese, Chinese} % Skills
-
+    {Tools/Services} % Category
+    {Git, Docker, Neo4j, Postgres, MongoDB, Heroku, Joyent/Triton, AWS S3 } % Skills
 \end{cvskills}
 
-
+%-------------------------------------------------------------------------------
+% Experience
+%-------------------------------------------------------------------------------
 \cvsection{Experience}
 \begin{cventries}
   \cventry
-    {Co-founder \& Software Engineer} % Job title
-    {PLAT Corp.} % Organization
-    {Seoul, S.Korea} % Location
-    {Jan. 2016 - PRESENT} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented RESTful API server for car rental booking application(CARPLAT in Google Play).}
-        \item {Built and deployed overall service infrastructure utilizing Docker container, CircleCI, and several AWS stack(Including EC2, ECS, Route 53, S3, CloudFront, RDS, ElastiCache, IAM), focusing on high-availability, fault tolerance, and auto-scaling.}
-        \item {Developed an easy-to-use Payment module which connects to major PG(Payment Gateway) companies in Korea.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Researcher} % Job title
-    {Undergraduate Research, Machine Learning Lab(Prof. Seungjin Choi)} % Organization
-    {Pohang, S.Korea} % Location
-    {Mar. 2016 - Exp. Jun. 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Researched classfication algorithms(SVM, CNN) to improve accuracy of human exercise recognition with wearable device.}
-        \item {Developed two TIZEN applications to collect sample data set and to recognize user exercise on SAMSUNG Gear S.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
-    {R.O.K Cyber Command, MND} % Organization
-    {Seoul, S.Korea} % Location
-    {Aug. 2014 - Apr. 2016} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
-        \item {Implemented a distributed web stress test tool with high anonymity.}
-        \item {Implemented a military cooperation system which is web based real time messenger in Scala on Lift.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Game Developer Intern at Global Internship Program} % Job title
-    {NEXON} % Organization
-    {Seoul, S.Korea \& LA, U.S.A} % Location
-    {Jan. 2013 - Feb. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed in Cocos2d-x an action puzzle game(Dragon Buster) targeting U.S. market.}
-        \item {Implemented API server which is communicating with game client and In-App Store, along with two other team members who wrote the game logic and designed game graphics.}
-        \item {Won the 2nd prize in final evaluation.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Researcher for <Detecting video’s torrents using image similarity algorithms>} % Job title
-    {Undergraduate Research, Computer Vision Lab(Prof. Bohyung Han)} % Organization
-    {Pohang, S.Korea} % Location
-    {Sep. 2012 - Feb. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Researched means of retrieving a corresponding video based on image contents using image similarity algorithm.}
-        \item {Implemented prototype that users can obtain torrent magnet links of corresponding video relevant to an image on web site.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Software Engineer Trainee} % Job title
-    {Software Maestro (funded by Korea Ministry of Knowledge and Economy)} % Organization
-    {Seoul, S.Korea} % Location
-    {Jul. 2012 - Jun. 2013} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Performed research memory management strategies of OS and implemented in Python an interactive simulator for Linux kernel memory management.}
-      \end{cvitems}
-    }
-
-  \cventry
+    {ActionSprout Inc.} % Organization
     {Software Engineer} % Job title
-    {ShitOne Corp. (Start-up company)} % Organization
-    {Seoul, S.Korea} % Location
-    {Dec. 2011 - Feb. 2012} % Date(s)
+    {Redmond/Bellingham, WA} % Location
+    {July 2016 - PRESENT $\cdot$ 1 yr 7 mos} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed a proxy drive smartphone application which connects proxy driver and customer. Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
+        \item Initiated projects such as Rails microservice generator, Facebook Graph API RubyGem, ActionSprout usage metrics collection and storage service, Facebook content curation and recommendation service, inter service JSON web token authentication standards etc. All of which are used daily.
+        \item Pioneered use of Docker/Docker-Compose standardizing developer environments. Mostly solved ``works on my machine" problem.
+        \item Designed a Neo4j on Docker toolkit for management and orchestration of Neo4j instances on Joyent's Triton container native platform.
+        \item Most valuable learned skill: Designing microservices with robust background job management through small, single responsibility, indempotent workers.
       \end{cvitems}
+    }
+    {
+      Heavily involved in Rails microservice architecture, developer tooling, Facebook data anylsis, and graph database applications.
     }
 
   \cventry
-    {Freelance Penetration Tester} % Job title
-    {SAMSUNG Electronics} % Organization
-    {S.Korea} % Location
-    {Sep. 2013, Mar. 2011 - Oct. 2011} % Date(s)
+    {8las/Realmax} % Organization
+    {Software Development Life Cycle (SDLC) Manager} % Job title
+    {Bellingham, WA/Shanghai, China} % Location
+    {July 2015 - July 2016 $\cdot$ 1 yr} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Conducted penetration testing on SAMSUNG KNOX, which is solution for enterprise mobile security.}
-        \item {Conducted penetration testing on SAMSUNG Smart TV.}
+        \item Cool thing 1
+        \item Cool thing 2
+        \item Cool thing 3
       \end{cvitems}
-      %\begin{cvsubentries}
-      %  \cvsubentry{}{KNOX(Solution for Enterprise Mobile Security) Penetration Testing}{Sep. 2013}{}
-      %  \cvsubentry{}{Smart TV Penetration Testing}{Mar. 2011 - Oct. 2011}{}
-      %\end{cvsubentries}
     }
+    {}
+
+  \cventry
+    {Womp Mobile} % Organization
+    {Production Engineer} % Job title
+    {Bellingham, WA} % Location
+    {Mar 2015 - Aug 2015  $\cdot$ 6 mos} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item Cool thing 1
+        \item Cool thing 2
+      \end{cvitems}
+    }
+    {}
+
+  \cventry
+    {Logos} % Organization
+    {Web Developer} % Job title
+    {Bellingham, WA} % Location
+    {Jun 2013 - Jan 2014  $\cdot$ 8 mos} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item Cool thing 1
+        \item Cool thing 2
+      \end{cvitems}
+    }
+    {}
+
+  \cventry
+    {Brer Technical} % Organization
+    {Software Engineer} % Job title
+    {Bellingham, WA} % Location
+    {Apr 2012 - Mar 2014  $\cdot$ 2 yrs} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item Cool thing 1
+        \item Cool thing 2
+      \end{cvitems}
+    }
+    {}
+
+  \cventry
+    {Western Washington University} % Organization
+    {Graduate \& Undergraduate Teaching Assistant} % Job title
+    {Bellingham, WA} % Location
+    {Sept 2011 - Mar 2015  $\cdot$ 3 yrs 6 mos} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item Cool thing 1
+        \item Cool thing 2
+      \end{cvitems}
+    }
+    {}
+
 \end{cventries}
 
-
-\cvsection{Extracurricular Activity}
+%-------------------------------------------------------------------------------
+% Projects
+%-------------------------------------------------------------------------------
+\cvsection{Projects}
 \begin{cventries}
 
   \cventry
-    {Core Member} % Affiliation/role
-    {B10S (B1t 0n the Security, Underground hacker team)} % Organization/group
-    {S.Korea} % Location
-    {Nov. 2011 - PRESENT} % Date(s)
+    {Lead Software Engineer} % Affiliation/role
+    {The Great Puzzle Hunt} % Organization/group
+    {https://greatpuzzlehunt.com} % Location
+    {June 2015 - PRESENT $\cdot$ 2 yrs 5 mos} % Date(s)
     {
-      \begin{cvitems} % Description(s) of experience/contributions/knowledge
-        \item {Gained expertise in penetration testing areas, especially targeted on web application and software.}
-        \item {Participated on a lot of hacking competition and won a good award.}
-        \item {Held several hacking competitions non-profit, just for fun.}
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item Cool thing 1
+        \item Cool thing 2
       \end{cvitems}
     }
+    {}
 
   \cventry
-    {Member} % Affiliation/role
-    {WiseGuys (Hacking \& Security research group)} % Organization/group
-    {S.Korea} % Location
-    {Jun. 2012 - PRESENT} % Date(s)
+    {Software Engineer/Co-Founder} % Affiliation/role
+    {Codelily Code School - Startup Weekend} % Organization/group
+    {Bellingham, WA} % Location
+    {Sept 2014 - Sept 2015 $\cdot$ 1 yr} % Date(s)
     {
-      \begin{cvitems} % Description(s) of experience/contributions/knowledge
-        \item {Gained expertise in hardware hacking areas from penetration testing on several devices including wireless router, smartphone, CCTV and set-top box.}
-        \item {Trained wannabe hacker about hacking technique from basic to advanced and ethics for white hackers by hosting annual Hacking Camp.}
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item Cool thing 1
+        \item Cool thing 2
       \end{cvitems}
     }
+    {}
 
   \cventry
-    {Core Member \& President at 2013} % Affiliation/role
-    {PoApper (Developers' Network of POSTECH)} % Organization/group
-    {Pohang, S.Korea} % Location
-    {Jun. 2010 - PRESENT} % Date(s)
+    {Software Engineer} % Affiliation/role
+    {Uzility Agile Kanban System - Startup Weekend} % Organization/group
+    {Bellingham, WA} % Location
+    {Dec 2013 - Nov 2014 $\cdot$ 9 mos} % Date(s)
     {
-      \begin{cvitems} % Description(s) of experience/contributions/knowledge
-        \item {Reformed the society focusing on software engineering and building network on and off campus.}
-        \item {Proposed various marketing and network activities to raise awareness.}
+      \cvparagraph {
+        Uzility was a web based agile software development kanban tool.
+      }
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item Worked alongside a former CTO of Emergency Reporting learning agile and scrum methodolgy.
+        \item Cool thing 2
       \end{cvitems}
     }
-
-  \cventry
-    {Member} % Affiliation/role
-    {PLUS (Laboratory for UNIX Security in POSTECH)} % Organization/group
-    {Pohang, S.Korea} % Location
-    {Sep. 2010 - Oct. 2011} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of experience/contributions/knowledge
-        \item {Gained expertise in hacking \& security areas, especially about internal of operating system based on UNIX and several exploit techniques.}
-        \item {Participated on several hacking competition and won a good award.}
-        \item {Conducted periodic security checks on overall IT system as a member of POSTECH CERT.}
-        \item {Conducted penetration testing commissioned by national agency and corporation.}
-      \end{cvitems}
-    }
-
-  \cventry
-    {Member} % Affiliation/role
-    {MSSA (Management Strategy Club of POSTECH)} % Organization/group
-    {Pohang, S.Korea} % Location
-    {Sep. 2013 - PRESENT} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of experience/contributions/knowledge
-        \item {Gained knowledge about several business field like Management, Strategy, Financial and marketing from group study.}
-        \item {Gained expertise in business strategy areas and inisght for various industry from weekly industry analysis session.}
-      \end{cvitems}
-    }
-
+    {}
 \end{cventries}
 
 \end{document}

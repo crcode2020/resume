@@ -162,7 +162,6 @@
 %-------------------------------------------------------------------------------
 % Set the FontAwesome font to be up-to-date.
 \newfontfamily\FA[Path=\@fontdir]{FontAwesome}
-
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
   Path=\@fontdir,
@@ -274,9 +273,9 @@
 % Usage: \name{<position>}
 \newcommand*{\position}[1]{\def\@position{#1}}
 
-% Defines writer's phone (optional)
-% Usage: \phone{<phone number>}
-\newcommand*{\phone}[1]{\def\@phone{#1}}
+% Defines writer's mobile (optional)
+% Usage: \mobile{<mobile number>}
+\newcommand*{\mobile}[1]{\def\@mobile{#1}}
 
 % Defines writer's email (optional)
 % Usage: \email{<email adress>}
@@ -437,10 +436,10 @@
     \headersocialstyle{%
       \newbool{isstart}%
       \setbool{isstart}{true}%
-      \ifthenelse{\isundefined{\@phone}}%
+      \ifthenelse{\isundefined{\@mobile}}%
         {}%
         {%
-          \faPhone\acvHeaderIconSep\@phone%
+          \faMobile\acvHeaderIconSep\@mobile%
           \setbool{isstart}{false}%
         }%
       \ifthenelse{\isundefined{\@email}}%
@@ -556,6 +555,15 @@
   \vspace{2mm}
 }
 
+% Define an environment for cventrysummary
+\newenvironment{cventrysummary}{%
+  \vspace{-4.0mm}
+  \begin{justify}
+}{%
+  \end{justify}
+  \vspace{-4.0mm}
+}
+
 % Define an environment for cventry
 \newenvironment{cventries}{%
   \vspace{\acvSectionContentTopSkip}
@@ -564,17 +572,20 @@
   \end{center}
 }
 % Define an entry of cv information
-% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
-\newcommand*{\cventry}[5]{%
+% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}{<summary>}
+\newcommand*{\cventry}[6]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
     \ifempty{#2#3}
-      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4}}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+      \entrypositionstyle{#1} & \entrydatestyle{#4}}
+    \ifempty{#6}
+      {\\ \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
+      {\\ \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}} \\
+       \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}}
   \end{tabular*}%
 }
 
