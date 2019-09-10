@@ -1,4 +1,7 @@
-resume
-======
+## Resume
 
-My personal resume
+[Kyle W. Rader's Resume](./kyle_rader_resume.pdf)
+
+## Website
+
+https://kylerader.ninja
