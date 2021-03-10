@@ -52,9 +52,9 @@
 \position{Software Engineer{\enskip\cdotp\enskip} Technology Enthusiast}
 % \address{}
 
-\mobile{425-241-7977}
+%\mobile{425-241-7977}
 \email{kyle@kylerader.ninja}
-\homepage{kylerader.ninja}
+%\homepage{kylerader.ninja}
 \github{/kyle-rader}
 \linkedin{/in/kylewrader}
 
@@ -87,15 +87,15 @@
 \begin{cvskills}
   \cvskill
     {Current Languages} % Category
-    {Ruby, NodeJS, Bash, Python, Cypher (graph query language)} % Skills
+    {C\# (Dotnet Core/5), Ruby, JavaScript, Bash, Python} % Skills
 
   \cvskill
     {Web} % Category
-    {Rails, Meteor, Express, React, Ember, HTML, LESS/SASS} % Skills
+    {Rails, React, Ember} % Skills
 
   \cvskill
-    {Tools/Services} % Category
-    {Git, Docker, Neo4j, Postgres, MongoDB, Heroku, Joyent/Triton, AWS S3 } % Skills
+    {Tools} % Category
+    {Git, Docker, Heroku, Azure Devops, Azure Pipelines, Github Actions} % Skills
 \end{cvskills}
 
 %-------------------------------------------------------------------------------
@@ -103,6 +103,26 @@
 %-------------------------------------------------------------------------------
 \cvsection{Experience}
 \begin{cventries}
+
+  \cventry
+    {Microsoft}
+    {Senior Software Engineer}
+    {Redmond, WA}
+    {April 2019 - Present $\cdot$ 2 yr 11 mos }
+    {
+      \begin{cvitems}
+        \item Developed our approach to handling line endings without Git auto-crlf in a 180GB repository. Built an Editor Config based line ending linter and integrated it into pull request linting pipelines.
+        \item Standardized my team's approach for writing cross-platform DotNet Core command line applications by developing a library to abstract and handle the configuration for logging, telemetry, and common CLI options. Our team now has a suite of modern CLI tools using this library making it easier to onboard new hires and for devs to move between different tools we own. Along the way I've adovocated for TDD and SOLID design principals.
+        \item Built and developed an Azure Pipelines based build policy to prevent unintentional but catostraphic user actions in our anit-pattern Git branching schema. This regularly catches 3-5\% of pull requests in the Office mono repository.
+        \item Helped co-found the Experiences and Devices GLEAM subchatper to support and lift up our LGBTQI+ Microsoft community. 
+        \item I've spent two years on the Fix-Hack-Learn v-team organizing and running events for the Office Engineering team three times a year.
+        \item Since December 2020, I've been the interim engineering manager for my team.
+      \end{cvitems}
+    }
+    {
+      I design and build CLI tools and workflows to make Office developers succesfull and happy using Git, Scalar, and Azure Devops. 
+    }
+
   \cventry
     {ActionSprout} % Organization
     {Software Engineer} % Job title
@@ -194,7 +214,6 @@
 
 \end{cventries}
 
-\newpage
 %-------------------------------------------------------------------------------
 % Projects
 %-------------------------------------------------------------------------------
@@ -260,28 +279,23 @@
   \begin{cvitems} % Description(s) bullet points
     \item {2014 Computer Science Dept. Citizenship award}
     \item {2013 Technology Leader of Tomorrow award from Technology Alliance Group NW (TAGNW)}
+    \item {Robotics Club President, IEEE Vice President, ACM Activites Coordinator, ACM Mentor}
   \end{cvitems}
   }
   {}
 
   \cventry
-  {M.S. Computer Science $\cdot$ expt 2018} % Degree
+  {M.S. Computer Science Coursework} % Degree
   {Western Washington University} % Institution
   {Bellingham, WA} % Location
   {Sept. 2014 - Expt. Spring. 2018} % Date(s)
   {
   \begin{cvitems} % Description(s) bullet points
-    \item {Finishing research, part-time, on social media post recommendation system for content curators. In conjunction with ActionSprout.}
+    \item {In 2018 I had finished all required coursework with a research project remaining but left the program for health reasons.}
     \item {Implemented application features at ActionSprout to collect a dataset of Facebook page-to-post voting observations.}
   \end{cvitems}
   }
   {}
 
 \end{cventries}
-
-\cvsection{Timeline}
-\vspace{2mm}
-
-\includegraphics[scale=.3]{kyle_rader_gantt.jpg}
-
 \end{document}
